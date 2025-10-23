@@ -7,6 +7,10 @@
   packages = [
     pkgs.jdk22
     pkgs.gradle_8
+    pkgs.maven3
+    pkgs.python313Full
+    pkgs.nodejs_latest
+    pkgs.corepack_latest
     # pkgs.go
     # pkgs.python311
     # pkgs.python311Packages.pip

@@ -1,3 +1,4 @@
+package apa.invoice;
 class InvoiceTest {
     public static void main(String[] args) {
         Invoice inv1=new Invoice(

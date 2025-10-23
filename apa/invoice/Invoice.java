@@ -1,3 +1,4 @@
+package apa.invoice;
 import java.text.MessageFormat;
 class Invoice {
     private String partnum;
@@ -24,7 +25,7 @@ class Invoice {
     public void setPartNum(String pn){partnum=pn;}
     public String getPartDesc(){return partdesc;}
     public void setPartDesc(String pd){partdesc=pd;}
-    public String toString(){
+    @Override public String toString(){
         return(MessageFormat.format(
             "Part Number: {0}\nDescription: {1}\nQuantity: {2}\nPrice: {3}\nInvoice amount: {4}",
             partnum,partdesc,quantity,price,price*quantity
