@@ -11,11 +11,8 @@
     pkgs.python313Full
     pkgs.nodejs_latest
     pkgs.corepack_latest
-    # pkgs.go
-    # pkgs.python311
-    # pkgs.python311Packages.pip
-    # pkgs.nodejs_20
-    # pkgs.nodePackages.nodemon
+    pkgs.neofetch
+    # pkgs.python313Packages.pip
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -24,6 +21,12 @@
     extensions = [
       # "vscodevim.vim"
       "google.gemini-cli-vscode-ide-companion"
+      "redhat.java"
+      "vscjava.vscode-java-pack"
+      "KnisterPeter.vscode-github"
+      "GitHub.github-vscode-theme"
+      "Oracle.oracle-java"
+      # "KylinIDETeam.java"
     ];
     # Enable previews
     previews = {
