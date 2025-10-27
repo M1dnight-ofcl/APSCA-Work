@@ -1,6 +1,5 @@
 //https://minich.com/education/wyo/java/worksheets/Complete%20the%20Class%20Worksheet%203.pdf
-public class Circle
-{
+public class Circle{
     public Circle(){myRadius=5;}
     public Circle(double rad){myRadius=rad;}
     public double getRadius(){return myRadius;}

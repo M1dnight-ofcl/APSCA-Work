@@ -63,6 +63,6 @@ public class MeNMyKup {
             "We don't give a fuck who you is, we don't give a fuck how you feel",
             "We don't give a fuck how you feel, we don't give no fucks",
         };
-        for(int i=0;i<l.length;i++){System.out.println(l[i]);}
+        for(String l1:l)System.out.println(l1);
     }
 }

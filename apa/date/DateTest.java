@@ -9,5 +9,8 @@ public class DateTest {
         d1.setYear(2003);
         System.out.print("\nDate with new value is: ");
         d1.displayDate();
+        d1.setYear(2023);
+        System.out.print("\nDate with new value is: ");
+        d1.displayDate();
     }
 }

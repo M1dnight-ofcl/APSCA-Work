@@ -1,6 +1,5 @@
 //https://minich.com/education/wyo/java/worksheets/Complete%20the%20Class%20Worksheet%204.pdf
-public class Rectangle
-{
+public class Rectangle{
     public Rectangle(){myWidth=2;myLength=1;}
     public Rectangle(double width,double length){
         myWidth=width;

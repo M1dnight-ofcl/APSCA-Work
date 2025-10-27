@@ -1,10 +1,10 @@
 # To learn more about how to use Nix to configure your environment
 # see: https://developers.google.com/idx/guides/customize-idx-env
-{ pkgs, ... }: {
+{pkgs,...}:{
   # Which nixpkgs channel to use.
-  channel = "stable-24.05"; # or "unstable"
+  channel="stable-24.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
-  packages = [
+  packages=[
     pkgs.jdk22
     pkgs.gradle_8
     pkgs.maven3
@@ -15,10 +15,10 @@
     # pkgs.python313Packages.pip
   ];
   # Sets environment variables in the workspace
-  env = {};
-  idx = {
+  env={};
+  idx={
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
-    extensions = [
+    extensions=[
       # "vscodevim.vim"
       "google.gemini-cli-vscode-ide-companion"
       "redhat.java"
@@ -28,11 +28,10 @@
       "Oracle.oracle-java"
       # "KylinIDETeam.java"
     ];
-    # Enable previews
-    previews = {
-      enable = true;
-      previews = {
-        # web = {
+    previews={
+      enable=true;
+      previews={
+        # web={
         #   # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
         #   # and show it in IDX's web preview panel
         #   command = ["npm" "run" "dev"];
@@ -45,18 +44,21 @@
       };
     };
     # Workspace lifecycle hooks
-    workspace = {
+    workspace={
       # Runs when a workspace is first created
-      onCreate = {
+      onCreate={
         # Example: install JS dependencies from NPM
         # npm-install = "npm install";
         # Open editors for the following files by default, if they exist:
-        default.openFiles = [ ".idx/dev.nix" "README.md" ];
+        default.openFiles=[
+          # ".idx/dev.nix"
+          # "README.md"
+        ];
       };
       # Runs when the workspace is (re)started
       onStart = {
         # Example: start a background task to watch and re-build backend code
-        # watch-backend = "npm run watch-backend";
+        # watch-backend="npm run watch-backend";
       };
     };
   };
